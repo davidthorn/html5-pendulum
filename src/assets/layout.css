@@ -1,0 +1,14 @@
+@media (orientation: landscape) {
+    .container {
+        width: 95vh;
+        height: 95vh;
+        margin: 2.5vh auto 2.5vh auto;
+    }
+}
+@media (orientation: portrait) {
+    .container {
+        width: 95vw;
+        height: 95vw;
+        margin: 2.5vw auto 2.5vw auto;  
+    }
+}

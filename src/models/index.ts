@@ -1,0 +1,1 @@
+export { PendulumObject } from './pendulum.class'
