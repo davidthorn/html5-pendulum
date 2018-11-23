@@ -1,5 +1,6 @@
 interface Window {
     pendulum: Pendulum
+    animate(): void
 }
 
 interface Pendulum {
@@ -10,4 +11,9 @@ interface Pendulum {
 
     draw(): void
     redraw(): void
+}
+
+type PendulumFrameCenter = {
+    x: number
+    y: number
 }

@@ -8,11 +8,21 @@ window.onload = () => {
     document.body.appendChild(container)
     
     window.pendulum = new PendulumObject(container)
-    window.pendulum.draw()
+    window.animate()
 }
+
+
 
 /// on resize
 window.onresize = () => {
-    window.pendulum.redraw()
+    window.animate()
     console.log('redrawing');
+}
+
+Window.prototype.animate = () => {
+
+    setInterval(() => {
+        window.pendulum.draw()
+    }, 60)
+    
 }
